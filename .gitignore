@@ -1,0 +1,29 @@
+# Create a .gitignore file for C++ projects
+cat > .gitignore <<EOL
+# Build directories
+build/
+bin/
+*.o
+
+# IDE files
+.vscode/
+.idea/
+*.user
+
+# Compiled files
+*.a
+*.so
+*.dylib
+*.exe
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# Test binaries
+tests
+EOL
